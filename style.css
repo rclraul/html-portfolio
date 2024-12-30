@@ -1,0 +1,184 @@
+/* General Styles */
+/* Ajustar estilo para las banderas */
+.language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #e6f0ff; /* Azul claro */
+    padding: 1rem;
+    border: 1px solid #cce0ff; /* Bordes suaves */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.language img {
+    width: 40px; /* Tamaño ajustado de la bandera */
+    height: 40px; /* Ajustar para que la imagen sea cuadrada y no se distorsione */
+    margin-bottom: 0.5rem; /* Separación entre imagen y texto */
+    object-fit: contain; /* Asegura que la imagen no se distorsione */
+}
+
+.language p {
+    margin: 0;
+    color: #003366; /* Azul oscuro */
+    font-weight: bold;
+}
+
+/* Resto de los estilos (no modificados) */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f8fc; /* Fondo suave azul claro */
+    color: #333; /* Texto en negro */
+}
+
+header {
+    background: #003366; /* Azul oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    color: #003366; /* Azul oscuro */
+    border-bottom: 3px solid #66a3ff; /* Azul brillante */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.grid p, .grid a {
+    background: #e6f0ff; /* Azul claro */
+    padding: 1rem;
+    border: 1px solid #cce0ff; /* Bordes suaves */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Resaltar solo el primer párrafo del primer grid */
+#background-languages .grid p:first-child {
+    grid-row: span 2;
+    text-align: left; /* Alineado a la izquierda para más claridad */
+    font-weight: bold; /* Resaltado */
+}
+
+/* Enlaces */
+.grid a {
+    color: #003366; /* Azul oscuro */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.grid a:hover {
+    text-decoration: underline;
+    color: #00509e; /* Azul brillante en hover */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #003366; /* Azul oscuro */
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+}
+
+/* Estilos para el encabezado */
+header {
+    background: #003366; /* Azul oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Alinea la foto y el texto verticalmente */
+    justify-content: center; /* Centra el contenido */
+}
+
+.profile-photo {
+    width: 90px; /* Tamaño ajustado de la foto */
+    height: 90px; /* Asegura que la imagen sea cuadrada */
+    border-radius: 50%; /* Redondea la imagen para que sea circular */
+    margin-right: 10px; /* Espacio entre la foto y el texto */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+
+/* Estilos generales del grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Aseguramos que cada celda del grid se centre */
+.grid p, .grid a {
+    background: #e6f0ff; /* Azul claro */
+    padding: 1rem;
+    border: 1px solid #cce0ff; /* Bordes suaves */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    display: flex; /* Utilizamos flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100%; /* Asegura que ocupe todo el espacio disponible */
+}
+
+/* Enlaces */
+.grid a {
+    color: #003366; /* Azul oscuro */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.grid a:hover {
+    text-decoration: underline;
+    color: #00509e; /* Azul brillante en hover */
+}
